@@ -13,7 +13,7 @@ CP-Agent is a modular multimodal agent system that supports human-interpretable 
 At its core, CP-Agent includes:
 - `CP-CLIP`: A contrastive learning module aligning Cell Painting images with structured experiment metadata.
 - `CP-Agent`: A reasoning pipeline that synthesizes visual features and context into interpretable biological reports.
-![CP-Agent Overview](figures/overveiw.png)
+![CP-Agent Overview](figures/plot1.png)
 
 ---
 
