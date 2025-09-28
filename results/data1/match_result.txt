@@ -1,0 +1,2 @@
+Best Match:
+Cell line is U2OS; Cells cultured in 50 µl of 2% FBS in DMEM medium, maintained at 37°C with 5% CO₂ and 90% humidity; Image channel is ER; The imaging objective is 20X; The concentration is 24 μM; The observation time is 24 hours; The perturbation compound is flindokalner; The mechanism of action for this compound is voltage-gated potassium channel kcnq3/kcnq4 activator.

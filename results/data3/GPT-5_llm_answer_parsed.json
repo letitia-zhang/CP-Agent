@@ -1,0 +1,136 @@
+{
+  "features_ranked": [
+    {
+      "name": "Texture_InverseDifferenceMoment_Tubulin_5_02_256",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by -0.0206 (CI [-0.0268, -0.0123], Cliff’s δ=0.63, q=1.3e-05), indicating lower homogeneity/smoothness.",
+      "mechanism_link": "Protein synthesis inhibition with stress/apoptosis can yield microtubule disorganization and heterogeneity; reduced homogeneity is consistent with this.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.88
+    },
+    {
+      "name": "Texture_AngularSecondMoment_Tubulin_3_03_256",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by -2.83e-04 (CI [-4.61e-04, -1.87e-04], Cliff’s δ=0.59, q=3.7e-05).",
+      "mechanism_link": "Lower ASM (less uniformity) aligns with cytoskeletal disruption/heterogeneity expected under translational stress.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.85
+    },
+    {
+      "name": "Texture_Contrast_Tubulin_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by +228.3 (CI [143.9, 349.6], Cliff’s δ=-0.54, q=1.4e-04).",
+      "mechanism_link": "Higher contrast indicates greater local intensity differences and fragmentation; consistent with microtubule collapse/heterogeneous bundles under stress or apoptosis.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.82
+    },
+    {
+      "name": "Texture_DifferenceEntropy_Tubulin_7_03_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by +0.337 (CI [0.145, 0.483], Cliff’s δ=-0.49, q=5.7e-04).",
+      "mechanism_link": "Increased difference entropy reflects higher disorder; compatible with stress-induced cytoskeletal disorganization.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.78
+    },
+    {
+      "name": "Neighbors_NumberOfNeighbors_50",
+      "direction": "decrease",
+      "observed_evidence": "Median neighbors decreased from 8 to 6 (CI [-4.0, -0.5], Cliff’s δ=0.46, q=9.7e-04).",
+      "mechanism_link": "Reduced neighbors suggest lower confluence/viability or rounding/detachment, which can occur with severe translational inhibition and apoptosis.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.72
+    },
+    {
+      "name": "Texture_Entropy_Tubulin_7_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by +0.433 (CI [0.071, 0.742], Cliff’s δ=-0.36, q=0.012).",
+      "mechanism_link": "Higher entropy denotes increased randomness in tubulin signal, aligning with stress-related microtubule disarray.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.65
+    },
+    {
+      "name": "Texture_SumEntropy_Tubulin_5_01_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by +0.290 (CI [0.052, 0.526], Cliff’s δ=-0.29, q=0.050).",
+      "mechanism_link": "Elevated sum entropy further indicates global texture disorder, consistent with disrupted cytoskeletal organization under protein synthesis blockade.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.58
+    },
+    {
+      "name": "Texture_Variance_Tubulin_5_03_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by +323.9 but CI [-17.7, 629.5] crosses 0; Cliff’s δ=-0.27, q=0.064.",
+      "mechanism_link": "Greater variance would fit increased heterogeneity, but statistical support is marginal; thus only weakly consistent.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.43
+    },
+    {
+      "name": "Texture_SumVariance_Tubulin_7_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by +969.9 with CI [-162.6, 1960.2] crossing 0; Cliff’s δ=-0.24, q=0.117.",
+      "mechanism_link": "Trend toward higher variability could align with disorganization, but evidence is weak.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.35
+    },
+    {
+      "name": "Granularity_1_Tubulin",
+      "direction": "increase",
+      "observed_evidence": "Median increased by +1.66; CI [-0.204, 4.885] crosses 0; Cliff’s δ=-0.21, q=0.171.",
+      "mechanism_link": "More fine-scale granularity could reflect fragmentation during apoptosis, but the statistics are not robust.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.3
+    },
+    {
+      "name": "AreaShape_Compactness",
+      "direction": "increase",
+      "observed_evidence": "Median increased by +0.081 with CI [-0.044, 0.216]; Cliff’s δ=-0.19, q=0.192.",
+      "mechanism_link": "Higher compactness may indicate rounding, which can occur with stress/apoptosis; evidence is weak.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.28
+    },
+    {
+      "name": "AreaShape_Area",
+      "direction": "increase",
+      "observed_evidence": "Median increased by +101.5; CI [-948.1, 477.0] crosses 0; Cliff’s δ=0.14, q=0.367.",
+      "mechanism_link": "No clear size reduction; rounding/apoptosis might decrease area, so this slight, non-significant increase is uninformative.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.2
+    },
+    {
+      "name": "Texture_Correlation_Tubulin_3_01_256",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by -0.031; CI [-0.127, 0.074] crosses 0; Cliff’s δ=0.13, q=0.394.",
+      "mechanism_link": "Lower correlation could reflect loss of long-range order, but the effect is small and not significant.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.22
+    },
+    {
+      "name": "AreaShape_Eccentricity",
+      "direction": "increase",
+      "observed_evidence": "Median increased by +0.0469; CI [-0.0513, 0.123] crosses 0; Cliff’s δ=-0.12, q=0.417.",
+      "mechanism_link": "Changes in eccentricity are subtle; not clearly tied to the mechanism here.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.18
+    },
+    {
+      "name": "Granularity_2_Tubulin",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by -0.0569; CI [-0.254, 0.317] crosses 0; Cliff’s δ=-0.07, q=0.626.",
+      "mechanism_link": "Mid-scale granularity shows no reliable change; no strong mechanistic inference.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.15
+    },
+    {
+      "name": "Granularity_3_Tubulin",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by -0.0295; CI [-0.318, 0.266] crosses 0; Cliff’s δ=0.046, q=0.721.",
+      "mechanism_link": "Large-scale granularity unchanged; uninformative regarding the proposed mechanism.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.12
+    }
+  ],
+  "mechanism_consistency": "supports",
+  "plausibility_score": "0.78",
+  "morphology_summary": "Perturbed cells show fewer neighbors (lower confluence) and strong shifts toward more heterogeneous, higher-contrast tubulin texture: homogeneity and uniformity metrics drop while contrast, entropy, and difference entropy rise markedly. Size/shape changes are subtle and mostly non-significant. Overall, the tubulin network appears more disordered and fragmented relative to control, consistent with stress-related cytoskeletal disruption.",
+  "overall_mechanism_assessment": "\n    The specimen is hypothesized to reflect emetine-mediated inhibition of protein synthesis leading to cytoskeletal/stress phenotypes. Below, I assess whether quantitative feature trends align with this mechanism.\n    Verdict: The observed phenotype overall supports a translation-inhibition–induced stress/disorganization state.\n    Evidence: Strong decreases in tubulin homogeneity and uniformity (InverseDifferenceMoment, AngularSecondMoment) and increases in Contrast and DifferenceEntropy (all q ≤ 5.7e-04; |Cliff’s δ| ≈ 0.49–0.63) indicate pronounced texture disorder. Neighbors_NumberOfNeighbors decreases (Δ=-2, q=9.7e-04), suggesting reduced confluence/viability. Other features (variance, sum-variance, granularity, area/shape) trend weakly and are not statistically decisive.\n    Mechanistic linkage sentence: Given the proposed MoA protein synthesis inhibition, it is known to alter proteostasis via ribosomal blockade, which should cause cellular stress and apoptosis; this would present as microtubule disorganization and fragmentation with potential cell loss (observed: lower homogeneity/ASM, higher contrast/entropy, fewer neighbors).\n    Caveats: Most size/shape metrics are non-significant, and some expected rounding/shrinkage is not clearly detected; off-target or secondary stress responses could dominate the tubulin channel. Recommend dose–response and time-course, plus orthogonal markers (apoptosis, ER stress, viability) and replicate expansion to confirm translation-specific effects.\n    "
+}

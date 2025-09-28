@@ -1,0 +1,2 @@
+Best Match:
+Cell line is MCF7; Cells cultured in RPMI 1640 medium with 10% fetal bovine serum, 1% GlutaMAX, and 900 μg/mL G418, maintained at 37°C with 5% CO₂; Image channel is DNA; The imaging objective is 20X; The concentration is 24 μM; The observation time is 24 hours; The perturbation compound is alln; The mechanism of action for this compound is protein degradation.

@@ -1,0 +1,2 @@
+Best Match:
+Cell line is HUVEC; Cells cultured in EGM2 medium, maintained at 37°C with 5% CO₂; Image channel is ER; The imaging objective is 10X; The concentration is 20 μM; The observation time is 20 hours; The perturbation compound is fexofenadine; The mechanism of action for this compound is histamine h1 receptor antagonist.

@@ -1,0 +1,35 @@
+compound,moa,SMILES,MolecularWeight,Min_Concentration,Max_Concentration
+PP-2,Epithelial,CC(C)(C)n1nc(c2ccc(Cl)cc2)c3c(N)ncnc13,301.781,0.01,30.0
+emetine,Protein synthesis,CCC1CN2CCc3cc(OC)c(OC)cc3C2CC1CC4NCCc5cc(OC)c(OC)cc45,480.64900000000034,0.01,30.0
+AZ258,Aurora kinase inhibitors,COc1cc(OC[C@H]2CCCN2)c3c(Nc4cnn(CC(=O)Nc5cccc(F)c5F)c4)ncnc3c1,509.51700000000017,0.01,30.0
+cytochalasin B,Actin disruptors,C[C@@H]1CCC[C@@H](O)\\C=C\\C(=O)O[C@]23[C@@H](\\C=C\\C1)[C@H](O)C(=C)[C@@H](C)[C@H]2[C@H](Cc4ccccc4)NC3=O,479.6170000000002,0.01,30.0
+ALLN,Protein degradation,CCCCC(NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC(=O)C)C=O,383.5330000000001,0.03,100.0
+mitoxantrone,DNA replication,OCCNCCNc1ccc(NCCNCCO)c2C(=O)c3c(O)ccc(O)c3C(=O)c12,444.4880000000002,0.003,10.0
+MG-132,Protein degradation,CC(C)C[C@H](NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC(=O)OCc1ccccc1)C=O,475.63000000000017,0.03,100.0
+AZ841,Aurora kinase inhibitors,CCOc1cc(OC[C@H]2CCCN2)c3c(Nc4cnn(CC(=O)Nc5cccc(F)c5F)c4)ncnc3c1,523.5440000000002,0.01,30.0
+docetaxel,Microtubule stabilizers,CC(=O)O[C@@]12CO[C@@H]1C[C@H](O)[C@]3(C)[C@@H]2[C@H](OC(=O)c4ccccc4)[C@]5(O)C[C@H](OC(=O)[C@H](O)[C@@H](NC(=O)OC(C)(C)C)c6ccccc6)C(=C([C@@H](O)C3=O)C5(C)C)C,807.89,0.0003,1.0
+mitomycin C,DNA damage,COC12C3NC3CN1C4=C(C2COC(=O)N)C(=O)C(=C(C)C4=O)N,334.3320000000001,0.003,10.0
+PD-169316,Kinase inhibitors,[O-][N+](=O)c1ccc(cc1)c2nc(c3ccc(F)cc3)c([nH]2)c4ccncc4,360.348,0.01,30.0
+proteasome inhibitor I,Protein degradation,CCC(C)C(NC(=O)OCc1ccccc1)C(=O)NC(CCC(=O)OC(C)(C)C)C(=O)NC(C)C(=O)NC(CC(C)C)C=O,618.7720000000003,0.003,10.0
+vincristine,Microtubule destabilizers,CC[C@]1(O)C[C@H]2CN(CCc3c([nH]c4ccccc34)[C@@](C2)(C(=O)OC)c5cc6c(cc5OC)N(C=O)[C@H]7[C@](O)([C@H](OC(=O)C)[C@]8(CC)C=CCN9CC[C@]67[C@H]89)C(=O)OC)C1,824.972,0.003,10.0
+AZ138,Eg5 inhibitors,CC[C@@H](N(CCCN)C(=O)c1ccc(C)cc1)C2=Nc3ccsc3C(=O)N2Cc4ccccc4,474.6300000000002,0.01,30.0
+demecolcine,Microtubule destabilizers,CNC1CCc2cc(OC)c(OC)c(OC)c2C3=CC=C(OC)C(=O)C=C13,371.4330000000001,0.003,10.0
+mevinolin,Cholesterol-lowering,CC[C@H](C)C(=O)O[C@H]1C[C@@H](C)C=C2C=C[C@H](C)[C@H](CC[C@@H]3C[C@@H](O)CC(=O)O3)[C@@H]12,404.54700000000025,0.015,50.0
+alsterpaullone,Kinase inhibitors,[O-][N+](=O)c1ccc2[nH]c3c(CC(=O)Nc4ccccc34)c2c1,293.28200000000004,0.01,30.0
+etoposide,DNA damage,COc1cc(cc(OC)c1O)[C@H]2[C@@H]3C(COC3=O)[C@H](O[C@@H]4O[C@@H]5CO[C@@H](C)O[C@H]5[C@H](O)[C@H]4O)c6cc7OCOc7cc26,588.5620000000001,0.01,30.0
+floxuridine,DNA replication,OCC1OC(CC1O)N2C=C(F)C(=O)NC2=O,246.19399999999996,0.03,100.0
+simvastatin,Cholesterol-lowering,CCC(C)(C)C(=O)O[C@H]1C[C@@H](C)C=C2C=C[C@H](C)[C@H](CC[C@@H]3C[C@@H](O)CC(=O)O3)[C@@H]12,418.57400000000024,0.006,20.0
+anisomycin,Protein synthesis,COc1ccc(C[C@H]2NC[C@H](O)[C@H]2OC(=O)C)cc1,265.30899999999997,0.003,10.0
+nocodazole,Microtubule destabilizers,COC(=O)Nc1nc2cc(ccc2[nH]1)C(=O)c3cccs3,301.327,0.001,3.0
+taxol,Microtubule stabilizers,CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](O)C[C@H]3OC[C@@]3(OC(=O)C)[C@H]2[C@H](OC(=O)c4ccccc4)[C@]5(O)C[C@H](OC(=O)[C@H](O)[C@@H](NC(=O)c6ccccc6)c7ccccc7)C(=C1C5(C)C)C,853.9180000000001,0.001,3.0
+camptothecin,DNA replication,CC[C@@]1(O)C(=O)OCC2=C1C=C3N(Cc4cc5ccccc5nc34)C2=O,348.35800000000006,0.003,10.0
+epothilone B,Microtubule stabilizers,C[C@H]1CCC[C@@]2(C)O[C@H]2C[C@H](OC(=O)C[C@H](O)C(C)(C)C(=O)[C@H](C)[C@H]1O)\\C(=C\\c3csc(C)n3)\\C,507.6930000000002,0.001,3.0
+latrunculin B,Actin disruptors,C[C@H]1CC[C@@H]2C[C@H](C[C@@](O)(O2)[C@@H]3CSC(=O)N3)OC(=O)\\C=C(\\C)/CC\\C=C/1,395.5210000000002,0.01,30.0
+cyclohexamide,Protein synthesis,CC1CC(C)C(=O)C(C1)C(O)CC2CC(=O)NC(=O)C2,281.35200000000003,0.015,50.0
+methotrexate,DNA replication,CN(Cc1cnc2nc(N)nc(N)c2n1)c3ccc(cc3)C(=O)N[C@@H](CCC(=O)O)C(=O)O,454.44700000000023,0.003,10.0
+colchicine,Microtubule destabilizers,COC1=CC=C2C(=CC1=O)[C@H](CCc3cc(OC)c(OC)c(OC)c23)NC(=O)C,399.44300000000015,0.001,3.0
+cisplatin,DNA damage,N[Pt](N)(Cl)Cl,298.03,0.01,30.0
+cytochalasin D,Actin disruptors,C[C@H]1C\\C=C\\[C@H]2[C@H](O)C(=C)[C@@H](C)[C@H]3[C@@H](Cc4ccccc4)NC(=O)C23C(OC(=O)C)\\C=C\\C(C)(O)C1=O,507.62700000000024,0.003,10.0
+chlorambucil,DNA damage,OC(=O)CCCc1ccc(cc1)N(CCCl)CCCl,304.217,0.003,10.0
+bryostatin,Kinase inhibitors,CCC\\C=C\\C=C\\C(=O)O[C@H]1\\C(=C\\C(=O)OC)\\C[C@H]2C[C@@H](OC(=O)C[C@H](O)C[C@@H]3C[C@H](OC(=O)C)C(C)(C)[C@](O)(C[C@@H]4C\\C(=C\\C(=O)OC)\\C[C@@H](O4)\\C=C\\C(C)(C)[C@]1(O)O2)O3)[C@@H](C)O,905.0440000000001,0.003,10.0
+lactacystin,Protein degradation,CC(C)[C@H](O)C1(NC(=O)[C@H](C)[C@@H]1O)C(=O)SC[C@H](NC(=O)C)C(=O)O,376.43100000000015,0.003,10.0

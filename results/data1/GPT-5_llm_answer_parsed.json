@@ -1,0 +1,128 @@
+{
+  "features_ranked": [
+    {
+      "name": "Neighbors_NumberOfNeighbors_50",
+      "direction": "decrease",
+      "observed_evidence": "Median dropped from 6.0 to 2.0 (Δ=-4.0; CI [-6.0, -2.0]); very large effect (Cliff’s δ=0.86) with q=1.5e-4.",
+      "mechanism_link": "Lower neighbor counts indicate reduced local confluence/dispersion; hyperpolarization from KCNQ activation could reduce proliferation or promote subtle shrinkage/spacing, which is broadly compatible but indirect.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.78
+    },
+    {
+      "name": "Texture_Contrast_ER_5_02_256",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased from 549.4 to 72.5 (Δ=-476.8; CI [-613.7, -269.3]); large effect (δ=0.82), q=1.5e-4.",
+      "mechanism_link": "Marked loss of ER contrast suggests smoother, less variegated ER signal; reduced Ca2+-dependent activity/protein synthesis under KCNQ activation could decrease ER heterogeneity.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.84
+    },
+    {
+      "name": "Texture_DifferenceEntropy_ER_5_02_256",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased from 5.37 to 3.46 (Δ=-1.90; CI [-2.70, -1.38]); large effect (δ=0.82), q=1.5e-4.",
+      "mechanism_link": "Lower difference entropy indicates more uniform ER texture; aligns with expectations of ER reorganization/compaction under reduced Ca2+ dynamics.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.82
+    },
+    {
+      "name": "Texture_InverseDifferenceMoment_ER_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased from 0.118 to 0.432 (Δ=+0.314; CI [0.244, 0.433]); large effect (δ=-0.81), q=1.5e-4.",
+      "mechanism_link": "Higher homogeneity (IDM) indicates smoother ER patterns; consistent with ER network becoming less granular under dampened Ca2+-dependent trafficking.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.83
+    },
+    {
+      "name": "Texture_Entropy_ER_5_02_256",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased from 10.80 to 6.42 (Δ=-4.38; CI [-5.42, -2.92]); large effect (δ=0.80), q=1.6e-4.",
+      "mechanism_link": "Lower entropy denotes reduced complexity in ER texture; compatible with ER compaction or decreased ER mass heterogeneity expected from reduced Ca2+-driven signaling.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.81
+    },
+    {
+      "name": "Texture_AngularSecondMoment_ER_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased from 0.00109 to 0.06995 (Δ=+0.0689; CI [0.0362, 0.1060]); large effect (δ=-0.79), q=1.7e-4.",
+      "mechanism_link": "Higher ASM (energy) reflects more regular ER intensity patterns; supports a shift toward smoother, less variable ER consistent with reduced Ca2+ activity.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.8
+    },
+    {
+      "name": "Texture_Variance_ER_5_02_256",
+      "direction": "decrease",
+      "observed_evidence": "Median dropped from 1368.9 to 250.4 (Δ=-1118.6; CI [-1405.7, -564.4]); large effect (δ=0.70), q=8.1e-4.",
+      "mechanism_link": "Lower variance indicates diminished ER intensity dispersion; aligns with reduced ER burden/heterogeneity.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.75
+    },
+    {
+      "name": "Texture_SumVariance_ER_5_02_256",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased from 4920.6 to 965.5 (Δ=-3955.1; CI [-4969.3, -1990.3]); large effect (δ=0.67), q=0.00124.",
+      "mechanism_link": "Further evidence of reduced ER texture variability; consistent with ER smoothing under dampened Ca2+-dependent processes.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.7
+    },
+    {
+      "name": "Granularity_1_ER",
+      "direction": "increase",
+      "observed_evidence": "Median rose from 80.93 to 84.14 (Δ=+3.21; CI [1.52, 6.18]); moderate effect (δ=-0.49), q=0.0209.",
+      "mechanism_link": "Slight increase in fine-scale ER granularity could indicate puncta/dilated elements; at high dose, UPR-like changes are plausible, so this does not contradict and may reflect mild stress.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.55
+    },
+    {
+      "name": "Texture_Correlation_ER_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased from 0.782 to 0.878 (Δ=+0.096); CI crosses 0 ([-0.0067, 0.165]); moderate effect (δ=-0.46), q=0.0309.",
+      "mechanism_link": "Higher correlation suggests smoother, more linearly related neighboring intensities; direction fits ER homogenization, but uncertainty limits weight.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.45
+    },
+    {
+      "name": "AreaShape_Eccentricity",
+      "direction": "decrease",
+      "observed_evidence": "Median changed from 0.859 to 0.828 (Δ=-0.031); CI includes 0 and effect small (δ=0.30), q=0.172.",
+      "mechanism_link": "Minor reduction in cell/nuclear elongation is not a clear expectation of KCNQ activation; evidence is weak.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.25
+    },
+    {
+      "name": "Granularity_3_ER",
+      "direction": "increase",
+      "observed_evidence": "Median rose from 1.13 to 1.42 (Δ=+0.295); CI spans 0 and small effect (δ=-0.26), q=0.248.",
+      "mechanism_link": "Possible increase in coarser ER structures could align with ER remodeling, but statistical support is weak.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.28
+    },
+    {
+      "name": "AreaShape_FormFactor",
+      "direction": "increase",
+      "observed_evidence": "Median increased from 0.564 to 0.613 (Δ=+0.049); CI crosses 0, small effect (δ=-0.23), q=0.282.",
+      "mechanism_link": "Slightly more circular cells could reflect shrinkage/compaction under ionic shifts, but evidence is weak.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.22
+    },
+    {
+      "name": "Granularity_2_ER",
+      "direction": "increase",
+      "observed_evidence": "Median increased from 1.16 to 1.27 (Δ=+0.107); CI spans 0, small effect (δ=-0.19), q=0.365.",
+      "mechanism_link": "Ambiguous; could reflect modest ER structural change but not reliable.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.2
+    },
+    {
+      "name": "AreaShape_Extent",
+      "direction": "decrease",
+      "observed_evidence": "Median changed from 0.640 to 0.623 (Δ=-0.0167); CI crosses 0, negligible effect (δ=0.03), q≈0.892.",
+      "mechanism_link": "No meaningful evidence for shape change; unrelated to the mechanism.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.1
+    }
+  ],
+  "mechanism_consistency": "supports",
+  "plausibility_score": "0.63",
+  "morphology_summary": "The perturbed cells show a strong homogenization of ER texture: large decreases in ER contrast, entropy, variance, and sum variance, with corresponding increases in homogeneity metrics (inverse difference moment, angular second moment, correlation). Neighbor counts drop markedly, indicating lower local cell density or increased spacing. Granularity changes are modest and mixed, and cell shape metrics change little.",
+  "overall_mechanism_assessment": "\n    - Prelude: The condition is proposed to activate KCNQ3/KCNQ4 K+ channels (flindokalner), potentially hyperpolarizing cells and dampening Ca2+-dependent ER dynamics. I evaluate whether quantitative ER and cellular features align with this hypothesis.\n    - Mechanism verdict: The observed phenotype generally supports ER smoothing/compaction consistent with reduced Ca2+-dependent activity under KCNQ activation.\n    - Evidence summary: ER texture measures show strong decreases in Contrast, Entropy, Variance, and SumVariance with large effects and low q-values, while homogeneity measures (InverseDifferenceMoment, AngularSecondMoment, Correlation) increase. Neighbors_NumberOfNeighbors_50 decreases substantially. Granularity_1_ER slightly increases, and other shape/granularity metrics show weak or no changes.\n    - Mechanistic linkage sentence: Given the proposed MoA KCNQ3/4 activation, it is known to alter membrane excitability via hyperpolarization, which should reduce voltage-gated Ca2+ entry; this would cause dampened ER Ca2+ dynamics and potentially reduced ER heterogeneity, presenting as smoother ER texture (observed: strong decreases in ER Contrast/Entropy/Variance and increases in homogeneity metrics with large effect sizes).\n    - Caveats and alternatives: The compound identity is uncommon and name recognition is limited; alignment relies on indirect ER readouts. Reduced neighbor counts may reflect toxicity or growth effects rather than specific ionic mechanisms. A dose–response and time course with ER stress markers and Ca2+ imaging, plus replicates to increase cell counts, would strengthen interpretation.\n    "
+}

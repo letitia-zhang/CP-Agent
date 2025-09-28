@@ -1,0 +1,64 @@
+- name: featRank_sys
+  prompt: |
+    You are a biomedical imaging expert evaluating Cell Painting assays.
+    Follow instructions exactly. Remain grounded in the provided context.
+    Return JSON only, with no extra text.
+    
+- name: background_curation
+  prompt: |
+    You are a biomedical research assistant with expertise in chemical biology and phenotypic profiling.
+
+    TASK: From the given perturbation condition, provide background knowledge about its known or expected mechanism of action (MoA), and infer which cellular components or morphological processes are likely to be affected.
+
+    INPUT:
+    - Perturbation condition (compound name, dose, time, etc.): {{ perturbation_condition }}
+
+    YOUR OUTPUT MUST INCLUDE:
+    1. **Mechanism summary**: a 1–2 sentence description of the compound’s mechanism of action.
+    2. **Morphological impact hypotheses**: a list of expected morphology-level effects (e.g., “microtubule depolymerization → spindle loss”, “chromatin condensation → nuclear texture change”) with reasoning.
+    3. **Impacted feature types**: a list of feature categories that this perturbation is likely to affect (e.g., area, shape, texture, granularity, neighbor count).
+
+    OUTPUT FORMAT:
+    Return only JSON in the following format:
+
+    {
+      "mechanism_summary": "<short description>",
+      "morphology_hypotheses": ["<hypothesis 1>","<hypothesis 2>"],
+      "likely_feature_types": ["AreaShape", "Texture_Tubulin", "Granularity_Tubulin", "Neighbors", "Location", "Number"]
+    }
+
+    Do not include citations or extra commentary. If unknown, say "unknown".
+    Be biologically grounded but concise.
+
+- name: featRank_user
+  prompt: |
+    TASK: Given a Cell Painting perturbation experiment, predict which morphological features are most likely to be affected.
+
+    INPUTS:
+    - Perturbation condition: {{ perturbation_condition }}
+    - Background biological knowledge (from prior curation step):
+    {{ background_curation_json }}
+    - Candidate CellProfiler feature names (i.e., the only allowed feature namespace): {{ feature_names_json }}
+
+    YOUR TASK:
+    - Select from the provided feature name list only.
+    - Predict which features are most likely to show morphological change under this perturbation.
+    - Ground your reasoning in both the known biological mechanism and expected morphological effects.
+    - If possible, relate features to biological structures (e.g., nuclear shape, texture, granularity, area, neighbor count, etc.).
+    - Be conservative: do not overclaim. If uncertain, assign lower confidence.
+
+    OUTPUT FORMAT:
+    Return only JSON in the following format:
+
+    {
+      "features_ranked": [
+        {
+          "name": "<feature_name from provided list>",
+          "rationale": "<1-2 sentence rationale grounded in A vs B visual differences and context>",
+          "confidence": <float between 0 and 1>
+        }
+      ],
+      "summary": "<brief one-paragraph summary of key morphology differences observed in B relative to A>"
+    }
+
+    Do not include any explanations or additional comments outside the JSON block.

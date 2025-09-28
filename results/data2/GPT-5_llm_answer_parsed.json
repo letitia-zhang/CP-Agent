@@ -1,0 +1,128 @@
+{
+  "features_ranked": [
+    {
+      "name": "Texture_Correlation_ER_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 0.098 (CI 0.079–0.158), large effect (Cliff’s δ=0.656), q=1.26e-09.",
+      "mechanism_link": "Higher ER correlation implies a more uniform/organized ER texture, which aligns with expected stabilization/smoothing from dampened H1R-driven Ca2+ dynamics.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.9
+    },
+    {
+      "name": "Granularity_1_ER",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 5.69 (CI 3.26–10.27), large effect (Cliff’s δ=0.537 in magnitude), q=7.91e-07.",
+      "mechanism_link": "An increase in fine-scale ER granularity suggests more punctate structure; this contradicts the hypothesis of smoother ER under H1R blockade.",
+      "supports_proposed_mechanism": "contradicts",
+      "support_confidence": 0.78
+    },
+    {
+      "name": "Neighbors_NumberOfNeighbors_50",
+      "direction": "decrease",
+      "observed_evidence": "Median neighbors dropped by 2 (CI −3 to −1), moderate effect (Cliff’s δ=0.403), q=3.09e-04.",
+      "mechanism_link": "Reduced local crowding/coverage is consistent with slightly reduced spreading or mild cell loss that could accompany attenuated signaling or off-target membrane effects.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.7
+    },
+    {
+      "name": "Texture_InverseDifferenceMoment_ER_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 0.046 (CI 0.008–0.083), moderate effect (Cliff’s δ=0.378 in magnitude), q=6.94e-04.",
+      "mechanism_link": "Higher homogeneity (IDM) indicates smoother ER texture, matching the expectation of reduced ER heterogeneity with decreased Ca2+-linked activity.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.68
+    },
+    {
+      "name": "Texture_DifferenceEntropy_ER_5_02_256",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 0.283 (CI −0.502 to −0.089), moderate effect (Cliff’s δ=0.354), q=0.00140.",
+      "mechanism_link": "Lower difference entropy reflects reduced ER randomness/heterogeneity, consistent with ER texture smoothing under H1R antagonism.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.72
+    },
+    {
+      "name": "Texture_Contrast_ER_5_02_256",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 166.6 (CI −296.5 to −46.6), moderate effect (Cliff’s δ=0.305), q=0.00627.",
+      "mechanism_link": "Lower contrast suggests diminished sharp intensity transitions in ER, fitting a more uniform network expected with reduced signaling.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.65
+    },
+    {
+      "name": "Texture_AngularSecondMoment_ER_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 0.00331 with CI spanning 0 (−0.00030 to 0.00767); small–moderate effect (Cliff’s δ=0.282), q=0.0114.",
+      "mechanism_link": "Higher ASM indicates greater order; directionally consistent with smoothing, but uncertainty reduces strength.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.45
+    },
+    {
+      "name": "Texture_DifferenceVariance_ER_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 1.26e-4 with CI including 0 (−1.68e-06 to 2.45e-04); small effect (Cliff’s δ=0.273 in magnitude), q=0.0116.",
+      "mechanism_link": "Higher difference variance suggests more local intensity disparity, which conflicts with a smoothing expectation; however, statistical uncertainty weakens this.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.35
+    },
+    {
+      "name": "Granularity_2_ER",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 0.199 (CI −0.435 to −0.0417), small effect (Cliff’s δ=0.273), q=0.0116.",
+      "mechanism_link": "Reduced coarser-scale granularity aligns with a smoother ER texture, supporting the proposed reduction in heterogeneity.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.55
+    },
+    {
+      "name": "Texture_Variance_ER_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 181 (CI −51.0 to 413), small effect (Cliff’s δ=0.194 in magnitude), q=0.0829.",
+      "mechanism_link": "Higher overall variance would imply more intensity spread, which could contradict smoothing; but non-significant and uncertain.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.25
+    },
+    {
+      "name": "AreaShape_Eccentricity",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 0.064 (CI 0.0012–0.118), very small effect (Cliff’s δ=0.102 in magnitude), q=0.406.",
+      "mechanism_link": "Slightly higher eccentricity could indicate less spreading/elongation changes; weak evidence but directionally compatible with reduced remodeling.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.3
+    },
+    {
+      "name": "AreaShape_Extent",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 0.0093 with CI crossing 0 (−0.041 to 0.010), tiny effect (Cliff’s δ=0.097), q=0.406.",
+      "mechanism_link": "Minor reduction in coverage could be consistent with modest reduced spreading, but evidence is weak.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.25
+    },
+    {
+      "name": "AreaShape_FormFactor",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 0.0058 with CI crossing 0 (−0.059 to 0.0376), tiny effect (Cliff’s δ=0.094), q=0.406.",
+      "mechanism_link": "No clear link given weak and uncertain change in shape regularity.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.22
+    },
+    {
+      "name": "Texture_SumEntropy_ER_5_02_256",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 0.095 with wide CI crossing 0 (−0.412 to 0.312), very small effect (Cliff’s δ=0.083), q=0.442.",
+      "mechanism_link": "Lower entropy would fit a more ordered ER, but the evidence is not significant.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.2
+    },
+    {
+      "name": "Texture_Entropy_ER_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 0.188 with CI crossing 0 (−0.485 to 0.646), negligible effect (Cliff’s δ=0.038), q=0.712.",
+      "mechanism_link": "Slight increase in entropy would oppose smoothing, but the effect is non-significant and minimal.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.15
+    }
+  ],
+  "mechanism_consistency": "supports",
+  "plausibility_score": "0.72",
+  "morphology_summary": "The perturbed condition shows fewer cells and reduced local crowding (neighbors −2). ER texture shifts toward greater uniformity: correlation and inverse difference moment increase, difference entropy and contrast decrease, and coarse-scale granularity declines, though fine-scale granularity rises. Shape changes are minor and statistically weak. Overall, quantitative features indicate a moderately smoother, more homogeneous ER with modest reduction in cell density.",
+  "overall_mechanism_assessment": "The specimen is hypothesized to reflect fexofenadine, a histamine H1 receptor antagonist, expected to dampen Ca2+-linked signaling and subtly smooth ER morphology. Below, I assess whether the observed morphology aligns with this hypothesis using quantitative feature trends and mechanistic linkage.\nMechanism verdict: Overall consistent with the proposed H1R antagonism, with several ER-smoothing indicators and mild cell-density reduction, though one granularity metric conflicts.\nEvidence summary: Strong increases in ER Correlation (+0.098, q≈1e-9) and IDM (+0.046, q≈7e-4), with decreases in Difference Entropy (−0.283, q≈0.0014) and Contrast (−166.6, q≈0.0063). Neighbors decrease by 2 (q≈3e-4). Coarse ER granularity decreases (q≈0.0116), but fine-scale granularity increases (q≈8e-7). Other metrics are small or non-significant.\nGiven the proposed MoA histamine H1 receptor antagonist, it is known to alter Gq/PLC/Ca2+ signaling via H1R blockade, which should reduce ER Ca2+ fluctuations and stress, causing a more uniform ER network; this would present as higher Correlation/IDM and lower Entropy/Contrast (observed: increases in Correlation/IDM and decreases in Difference Entropy/Contrast with significant effects).\nCaveats and alternatives: The increase in fine-scale ER granularity suggests residual puncta or off-target effects at 20 μM; several shape metrics are weak. Consider dose–response and histamine challenge assays, replicate expansion, and additional organelle channels (e.g., mitochondria, lipid droplets) to resolve off-target contributions."
+}

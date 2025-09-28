@@ -1,0 +1,160 @@
+{
+  "features_ranked": [
+    {
+      "name": "Texture_SumEntropy_DNA_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 0.818 (CI 0.363–1.187), large effect (Cliff’s δ=0.689), q=8.4e-05.",
+      "mechanism_link": "Higher nuclear texture entropy is consistent with proteostasis stress and chromatin remodeling expected from proteasome/calpain inhibition.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.86
+    },
+    {
+      "name": "Texture_Entropy_DNA_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 0.845 (CI 0.531–1.242), large effect (Cliff’s δ=0.661), q=9.4e-05.",
+      "mechanism_link": "Elevated entropy indicates more heterogeneous nuclear texture, aligning with stress-induced chromatin changes under blocked protein degradation.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.86
+    },
+    {
+      "name": "Texture_DifferenceEntropy_DNA_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 0.779 (CI 0.253–1.174), large effect (Cliff’s δ=0.650), q=9.4e-05.",
+      "mechanism_link": "Greater difference-entropy suggests increased local heterogeneity, compatible with DNA damage/stress responses from protease inhibition.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.82
+    },
+    {
+      "name": "Texture_Contrast_DNA_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 336.25 (CI 98.63–701.26), large effect (Cliff’s δ=0.620), q=1.74e-04.",
+      "mechanism_link": "Higher contrast reflects stronger intra-nuclear intensity differences; this fits apoptotic/mitotic subpopulations predicted with proteasome/calpain inhibition.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.8
+    },
+    {
+      "name": "Texture_Variance_DNA_5_02_256",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 435.65 (CI 89.43–764.94), large effect (Cliff’s δ=0.602), q=2.36e-04.",
+      "mechanism_link": "Raised variance indicates heterogeneous nuclear intensity, consistent with mixed cell-cycle and apoptotic states after proteostasis blockade.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.78
+    },
+    {
+      "name": "Texture_InfoMeas1_DNA_5_02_256",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 0.103 (CI -0.195 to -0.048), moderate effect (Cliff’s δ=0.555), q=7.1e-04.",
+      "mechanism_link": "More negative InfoMeas1 implies higher disorder; this aligns with increased nuclear texture heterogeneity expected under proteostasis stress.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.75
+    },
+    {
+      "name": "Number_Object_Number",
+      "direction": "decrease",
+      "observed_evidence": "Median field count decreased by 8.5 cells (CI -16.51 to -1.0), moderate effect (Cliff’s δ=0.415), q=0.016.",
+      "mechanism_link": "Reduced cell count can reflect cytotoxicity or proliferation arrest, both plausible outcomes of proteasome/calpain inhibition.",
+      "supports_proposed_mechanism": "supports",
+      "support_confidence": 0.7
+    },
+    {
+      "name": "AreaShape_Solidity",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 0.0076 with CI spanning zero (-0.0165 to 0.00023), small effect (Cliff’s δ=0.319), q=0.083.",
+      "mechanism_link": "Slightly reduced solidity could indicate nuclear shape irregularities predicted by cytoskeletal/calpain effects, but evidence is weak.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.45
+    },
+    {
+      "name": "AreaShape_MaxFeretDiameter",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 1.23, CI includes zero (-0.94 to 4.14), small effect (Cliff’s δ=0.255), q=0.179.",
+      "mechanism_link": "Minor increase in maximal nuclear span offers limited support for G2/M enlargement; not statistically robust.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.35
+    },
+    {
+      "name": "AreaShape_FormFactor",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 0.0299 (CI -0.0701 to -0.00289), small effect (Cliff’s δ=0.248), q=0.179.",
+      "mechanism_link": "Lower form factor suggests less circular nuclei, compatible with stress-induced shape irregularities, but significance is marginal.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.4
+    },
+    {
+      "name": "Neighbors_NumberOfNeighbors_50",
+      "direction": "ambiguous",
+      "observed_evidence": "No shift in median (2 vs 2); CI broad (-2 to 1), small effect (Cliff’s δ=0.168), q=0.420.",
+      "mechanism_link": "Cell-cell proximity not clearly altered; this does not inform the mechanism.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.2
+    },
+    {
+      "name": "Granularity_3_DNA",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 0.075; CI crosses zero (-0.327 to 0.144), very small effect (Cliff’s δ=0.100), q=0.778.",
+      "mechanism_link": "Granularity changes could reflect chromatin condensation, but evidence is weak and non-significant.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.2
+    },
+    {
+      "name": "AreaShape_MinFeretDiameter",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 0.216; CI spans zero (-3.38 to 3.18), negligible effect (Cliff’s δ=0.075), q=0.778.",
+      "mechanism_link": "No reliable change in minimal nuclear span; does not inform G2/M or apoptosis hypotheses.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.18
+    },
+    {
+      "name": "Neighbors_FirstClosestDistance_50",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 5.32; CI wide and crosses zero (-14.41 to 19.81), negligible effect (Cliff’s δ=0.069), q=0.778.",
+      "mechanism_link": "No reliable change in inter-nuclear spacing; not mechanistically informative.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.15
+    },
+    {
+      "name": "AreaShape_Eccentricity",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 0.00224; CI spans zero (-0.089 to 0.121), negligible effect (Cliff’s δ=0.063), q=0.778.",
+      "mechanism_link": "No meaningful shift in eccentricity; cannot support or refute expected apoptotic condensation/shape change.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.15
+    },
+    {
+      "name": "Granularity_2_DNA",
+      "direction": "increase",
+      "observed_evidence": "Median increased by 0.087; CI crosses zero (-0.186 to 0.271), negligible effect (Cliff’s δ=0.055), q=0.778.",
+      "mechanism_link": "Granularity increase could be consistent with heterogeneity, but evidence is non-significant.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.15
+    },
+    {
+      "name": "AreaShape_Zernike_4_2",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 0.00114; CI crosses zero (-0.00539 to 0.00648), negligible effect (Cliff’s δ=0.055), q=0.778.",
+      "mechanism_link": "No reliable change in this shape moment; not informative for the mechanism.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.15
+    },
+    {
+      "name": "AreaShape_Area",
+      "direction": "decrease",
+      "observed_evidence": "Median decreased by 38 (CI -155 to 108.1), negligible effect (Cliff’s δ=0.051), q=0.778.",
+      "mechanism_link": "No clear shift in nuclear area; does not strongly support G2/M arrest or apoptotic shrinkage.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.18
+    },
+    {
+      "name": "AreaShape_EulerNumber",
+      "direction": "ambiguous",
+      "observed_evidence": "No change (all medians 1.0), effect size 0, q=1.0.",
+      "mechanism_link": "Topology of segmented nuclei unchanged; no link to mechanism.",
+      "supports_proposed_mechanism": "insufficient",
+      "support_confidence": 0.1
+    }
+  ],
+  "mechanism_consistency": "supports",
+  "plausibility_score": "0.68",
+  "morphology_summary": "The perturbed nuclei exhibit markedly increased DNA texture heterogeneity and contrast/variance, alongside a reduction in cell count per field. Shape alterations are subtle and mostly non-significant, with minor decreases in form factor and solidity. Overall, the dominant phenotype is heightened nuclear texture disorder, consistent with stress-associated chromatin changes rather than prominent nuclear size shifts.",
+  "overall_mechanism_assessment": "The specimen is hypothesized to reflect inhibition of protein degradation by ALLN, leading to proteostasis stress and mixed cell-cycle/apoptotic effects. Below, I assess whether the observed morphology aligns with this hypothesis using quantitative feature trends and mechanistic linkage.\nMechanism verdict: The data support the proposed mechanism based on strong increases in nuclear texture disorder and reduced cell counts.\nEvidence summary: Multiple DNA texture metrics increase strongly (Entropy, SumEntropy, DifferenceEntropy, Contrast, Variance; Cliff’s δ≈0.60–0.69; q≤2.4e-04). Field cell counts decrease (Δ=-8.5, q=0.016). Most size/shape metrics show weak or no changes with wide CIs. Visual inspection is secondary but appears consistent with fewer cells and heterogeneous nuclear intensities.\nGiven the proposed MoA protein degradation inhibition, it is known to alter proteostasis via proteasome/calpain blockade, which should cause stress responses and cell-cycle/apoptotic perturbations; this would present as increased nuclear texture heterogeneity and reduced proliferation (observed: strong increases in texture features and decreased cell number), though clear G2/M-related nuclear enlargement is not evident.\nCaveats and alternatives: Nuclear area and eccentricity changes are minimal, and some effects could reflect general cytotoxic stress rather than a specific proteasome signature. Additional checks such as dose–response, time-course, and inclusion of mitotic/apoptosis markers or multi-channel Cell Painting features would strengthen attribution."
+}

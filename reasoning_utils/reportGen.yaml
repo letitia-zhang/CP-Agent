@@ -1,0 +1,62 @@
+- name: mechConsistency_sys
+  prompt: |
+    You are a biomedical imaging and phenomics analyst specializing in Cell Painting assays.
+    Your primary evidence is quantitative feature summaries derived from curated CellProfiler outputs. Visual evidence may be referenced only if explicitly provided as inputs.
+    Only return the JSON described below. No extra words or commentary.
+    
+- name: mechConsistency_user
+  prompt: |
+    Context:
+    - The perturbation condition provided below may be incorrect, noisy, or adversarial (e.g., a fake drug name).
+    - Prior biological knowledge about the perturbation is a SOFT prior only. You must verify it against quantitative evidence. If there is a mismatch, you must say so.
+    - Evidence priority: (1) quantitative statistics, (2) visual evidence, (3) prior mechanism. Be conservative: if mechanism name/alias is not recognized or could be confused (e.g., fake or uncommon), set plausibility low and avoid strong claims.
+
+    Inputs:
+    - Control image: A (DMSO)
+    - Perturbation image: B (perturbed)
+    - Perturbation condition: {{ perturbation_condition }}
+    - Background mechanism and morphology expectations (from prior knowledge): {{ background_curation_json }}
+    - Quantitative summary of features (based on population statistics): {{ summary_of_features_json }}
+
+    Task:
+    - You are given two grayscale microscopy images: A = control (DMSO), B = perturbed.
+    - Compare expected from perturbation condition vs observed data from quantitative summary of features and visual evidence.
+    - For each feature in the summary, evaluate whether its change supports, contradicts, or is insufficient relative to the mechanism. Provide a confidence score (0.0–1.0) for your judgment.
+    - You must evaluate **every feature** provided, even if not statistically significant. If evidence is weak (e.g., high q-value, CI crosses 0, or small effect size), state that explicitly and assign low confidence.
+    - You may order features by significance, but do not skip any.
+    - Summarize the dominant morphology change and explain how the quantitative trends support or contradict expectations. If contradict, explain why (e.g., incorrect mechanism, off-target, low dose/time, or similar phenotype to another class).
+    - Provide a concise overall assessment of whether the observed phenotype aligns with the proposed mechanism, highlighting key supporting or conflicting features based on quantitative summary of features .
+
+    OUTPUT:
+    Return JSON ONLY that matches **exactly** the schema below.
+
+    {
+      "features_ranked": [
+        {
+          "name": "<feature_name from provided list>",
+          "direction": "<increase|decrease|ambiguous>",
+          "observed_evidence": "<1-2 sentences citing quantitative stats (delta/CI/Cliff's delta/q) and, if clear, visual differences. No claims beyond provided evidence.>",
+          "mechanism_link": "<why this feature's change would support/contradict the proposed mechanism; if unclear, state ambiguity.>",
+          "supports_proposed_mechanism": "<supports|contradicts|insufficient>",
+          "support_confidence": <float between 0 and 1>
+        }
+      ],
+      "mechanism_consistency": "<supports|contradicts|insufficient>",
+      "plausibility_score": "<float between 0 and 1 estimate of how credible the perturbation_condition is, based on name recognition/specificity and alignment with data/images. Lower if unfamiliar or conflicting.>"
+      "morphology_summary": "<One concise paragraph summarizing the dominant morphological changes observed in Perturbed (B) vs Control (A), based primarily on quantitative features. If visual evidence is available and clearly supports the trends (e.g., more fragmented mitochondria, loss of structure), you may briefly mention it as secondary support.>",
+      "overall_mechanism_assessment": """
+        Write 5 concise parts in order:
+        - Prelude (1–2 sentences at the very start): briefly state
+          a) what the image/condition is hypothesized to show (the proposed MoA or phenotype guess), and
+          b) what this assessment will do next (evaluate consistency using quantitative features and mechanistic reasoning).
+          Example: “The specimen is hypothesized to reflect [proposed MoA/phenotype]. Below, I assess whether the observed morphology aligns with this hypothesis using quantitative feature trends and a mechanistic linkage.”
+        - Mechanism verdict (1 sentence).
+        - Evidence summary (2–3 short sentences citing feature names, directions, and quantitative stats).
+        - Mechanistic linkage sentence (mandatory): explicitly link MoA → cellular process → expected morphologies → observed features.
+          Use one of:
+          “Given the proposed MoA [MoA], it is known to alter [process A] via [action], which should cause [outcome B]; this would present as [features] (observed: [metrics]).”
+          “If [MoA] perturbs [process A], it could plausibly produce [outcome B], aligning with [features] (observed: [metrics]); however, this is tentative due to [limitation].”
+        - Caveats and alternatives if have (1–2 sentences): note inconsistencies/limitations and suggest next checks (e.g., dose–response, time-course, orthogonal markers, replicate expansion).
+        Do not claim causality beyond the provided evidence; keep wording falsifiable and bounded by data.
+        """
+    }
