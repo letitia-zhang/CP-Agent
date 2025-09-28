@@ -27,14 +27,46 @@ At its core, CP-Agent includes:
 
 ---
 
-## 🧬 Applications
+## 🛠️ Usage Guide
 
-- Mechanism-of-action (MoA) inference
-- Phenotypic screening and hit triaging
-- Hypothesis generation for drug discovery
-- Cross-study generalization in morphological profiling
+You can run **CP-Agent** either as a script or step-by-step in a notebook:
+To set up the environment and install all dependencies, run:
 
----
+```bash
+pip install -r requirements.txt
+```
+This will set up the full environment needed to run CP-Agent, including image processing, deep learning, and LLM integration components.
+
+> ✅ It's recommended to use a virtual environment (e.g., `venv` or `conda`) and Python 3.9–3.11.
+> ⚠️ Note: Some packages will be installed directly from GitHub (e.g., `segment_anything`). Make sure `git` is available in your environment.
+All configurable parameters (e.g., input image paths, output locations, analysis options) can be customized in:
+
+```
+config.py
+```
+
+To run the end-to-end pipeline and generate a full report:
+
+```bash
+python cpagent_reportGen.py
+```
+
+
+You can step through each stage interactively in the provided Jupyter notebook:
+
+```bash
+jupyter notebook cp-agent_demo.ipynb
+```
+
+To help you get started, we’ve included example Cell Painting images in:
+
+```
+example_images/
+```
+
+These image pairs (control vs perturbation) can be used to test the pipeline or fine-tune your configuration.
+
+📌 **Tip**: Make sure the image paths in `config.py` are pointing to the correct files in `example_images/`.
 
 
 ## 📁 Project Structure
