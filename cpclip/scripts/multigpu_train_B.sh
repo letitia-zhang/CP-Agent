@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /ssd2/letitiaz/cp_project/data
 
-export PYTHONPATH=/ssd2/letitiaz/cp_project/code/open-clip/src
+export PYTHONPATH=/ssd2/xxx/cp_project/code/open-clip/src
 export CUDA_VISIBLE_DEVICES=0,2,3,4,5,6,7
 export TORCH_DISTRIBUTED_DEBUG=DETAIL
 
@@ -9,8 +9,8 @@ torchrun \
   --nproc-per-node=7 \
   --master-port=12345 \
   -- \
-  /ssd2/letitiaz/cp_project/code/open-clip/src/open_clip_train/main.py \
-  --train-data /ssd2/letitiaz/cp_project/data/jsonFile/experimentJsonl_moa/final/train_0903.jsonl\
+  /ssd2/xxx/main.py \
+  --train-data /ssd2/xxx/train_0903.jsonl\
   --dataset-type jsonl \
   --model ViT-L-16 \
   --warmup 5000 \
