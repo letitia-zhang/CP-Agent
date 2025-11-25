@@ -30,7 +30,7 @@ def get_config():
         "output_base": os.path.join(base_dir, "results"),
 
         "models": ["GPT-5"],
-        "api_key": "eZG8-qVwGLMfIJwJy94dEX44v3p9vwolxLn-HgtRIug",  
+        "api_key": "xxxx",  
         "prompt_yaml_path_step1": os.path.join(base_dir, "reasoning_utils", "featRank.yaml"),
         "prompt_yaml_path_step3": os.path.join(base_dir, "reasoning_utils", "reportGen.yaml")
     }
