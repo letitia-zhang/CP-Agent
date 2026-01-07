@@ -410,12 +410,8 @@ def main(args):
                 try:
                     optimizer.load_state_dict(checkpoint["optimizer"])
                 except ValueError as e:
-                    logging.warning(f"Optimizer state_dict mismatch: {e}")
-                    # 修复 param_groups
                     old_opt_state = checkpoint["optimizer"]
                     old_opt_state["param_groups"] = optimizer.state_dict()["param_groups"]
-
-                    # ⚠️ 修复 state: 只保留当前 param 的 state
                     current_param_ids = {id(p): p for group in optimizer.param_groups for p in group['params']}
                     valid_state = {
                         k: v for k, v in old_opt_state["state"].items()
